@@ -182,7 +182,7 @@ h1, h2, h3, input, select, button, span, a {
 }
 
 #featured-slider > .featured-slider-items > .featured-slider-item:nth-child(1) {  
-  background-image: url("https://images.unsplash.com/photo-1635205411883-ae35d1169f60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHx2aWRlbyUyMGdhbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"); 
+  background-image: url("https://www.templatemonster.com/help/wp-content/uploads/2011/09/How-to-embed-video-into-HTML-page-1.jpg"); 
 }
 
 #featured-slider > .featured-slider-navigator {
@@ -486,4 +486,182 @@ h1, h2, h3, input, select, button, span, a {
     height: auto;
     padding-bottom: 4rem;
   }
+}@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100;200;300;500;600;700;800;900&display=swap');
+
+.sidenav{
+    display: grid;
+flex-direction: column;
+flex-wrap: wrap;
+}
+nav a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 4rem;
+    text-decoration: dashed;
+    color: black;
+}
+.menu, .cart{
+    display: none;
+}
+.main-nav{
+    grid-row: 1;
+    grid-column: 1-2;
+    list-style: none;
+    margin: 3rem;
+    margin-bottom: 1rem;
+}
+aside{
+    grid-row: 2;
+    margin-left: 3rem;
+}
+.active{
+    text-decoration: line-through 3px #ff4e4e;
+}
+.brand, .heading{
+    font-family: 'Abril Fatface', cursive;
+    font-size: xx-large;
+} 
+.heading{
+    grid-column: 1;
+    font-size: 3.5rem;
+}
+.about-paragraph{
+    grid-column: 3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.about-paragraph::after{
+    background-color: #ff4e4e;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 64px;
+}
+.main{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 60% 10% 20%;
+    margin-top: -2rem;
+}
+.card-container{
+    display: flex;
+    flex-direction: right;
+    margin-top: 3rem;
+    overflow: scroll;
+    grid-column: 1/5;
+    padding-bottom: 4rem;
+}
+.card-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.card-container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.card{
+    border-radius: 20px;
+    box-shadow: 0 10px 18px rgb(0 0 0 / 25%);
+    width: 12rem;
+    margin: 10px;
+}
+.card img{
+    border-radius: 50%;
+    margin: 1.5rem;
+    width: 9rem;
+    height: 9rem;
+}
+.card p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 25px;
+}
+@media (max-width: 600px) {
+    .sidenav{
+        padding-left: 3rem;
+        padding-top: 6rem;
+    }
+    .menu, .cart{
+        display: initial;
+    }
+    .brand span{
+        display: none;
+    }
+    .main-nav{
+        display: flex;
+        line-height: 3rem;
+        justify-content: space-between;
+        width: 86vw;
+        margin: 0;
+        padding: 7vw;
+    }
+    li svg{
+        font-size: xx-large;
+        margin-top: 1rem;
+    }
+    body{
+        display: block;
+    }
+    aside{
+        display: none;
+    }
+    .main{
+        width: 86vw;
+        padding: 7vw;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr auto;
+    }
+    .heading{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .about-paragraph{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .card-container :nth-child(n+5){
+        display: none;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-bottom:1rem;
+    }
+      aside{
+        background-color: #fff;
+        z-index: 2;
+        margin: 0 !important;
+        width: 60vw;
+        height: 100vh;
+        position: fixed;
+    }
+    .card-container{
+        overflow: visible;
+        z-index: 1;
+        margin-left: -0.5rem;
+    }
+    .card{
+        border-radius: 20px;
+        box-shadow: 0 10px 18px rgb(0 0 0 / 25%);
+        width: 40vw;
+        margin: 10px;
+    }
+    .card img{
+        border-radius: 50%;
+        margin: 5vw;
+        width: 30vw;
+        height: 30vw;
+    }
+    .card p{
+        font-size: small;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        margin: 0px;
+        padding-bottom: 25px;
+    }
 }
