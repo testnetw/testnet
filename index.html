@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Steam Mobile Redesign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div id="main-wrapper" class="fancy-scrollbar">
+    <div id="main">
+      <div id="nav">
+        <a class="nav-brand" href="#">
+          <i class="fa-brands fa-steam"></i>
+          <h3>STEAM</h3>
+        </a>
+        <button class="nav-menu-toggle" type="button">
+          <i class="fa-light fa-bars-sort"></i>
+        </button>
+      </div>
+      <div id="content">
+        <div id="featured-slider" data-active-index="0">
+          <div class="featured-slider-items">
+            <a class="featured-slider-item" href="#">
+              <div class="featured-slider-item-info-wrapper">
+                <div class="featured-slider-item-info">
+                  <h2 class="title">Cybermonk 2099</h2>
+                  <h3 class="price highlight">$59.99</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider-navigator">
+            <button class="featured-slider-navigator-bar" type="button" data-index="0"></button>
+            <button class="featured-slider-navigator-bar" type="button" data-index="1"></button>
+            <button class="featured-slider-navigator-bar" type="button" data-index="2"></button>
+            <button class="featured-slider-navigator-bar" type="button" data-index="3"></button>
+          </div>
+        </div>
+        <div id="search">
+          <input class="search-input" type="search" placeholder="Search" />
+          <button class="search-button" type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div id="browse">
+          <a class="browse-option" href="https://youtube.com/shorts/TmSIIR64yLQ" target="_blank">
+            <div class="browse-option-background"></div>
+            <i class="fa-brands fa-youtube"></i>
+            <span class="label">Click Me</span>
+          </a>
+          <button class="browse-option" type="button">
+            <div class="browse-option-background"></div>
+            <i class="fa-solid fa-tags"></i>
+            <span class="label">Tags</span>
+          </button>
+          <button class="browse-option" type="button">
+            <div class="browse-option-background"></div>
+            <i class="fa-light fa-percent"></i>
+            <span class="label">Specials</span>
+          </button>
+          <button class="browse-option" type="button">
+            <div class="browse-option-background"></div>
+            <i class="fa-solid fa-sparkles"></i>
+            <span class="label">Free</span>
+          </button>
+        </div>
+        <div id="list" class="no-scrollbar" data-active-index="0">
+          <div class="list-options">
+            <button class="list-option" type="button" data-index="0">
+              New
+            </button>
+            <button class="list-option" type="button" data-index="1">
+              Trending
+            </button>
+            <button class="list-option" type="button" data-index="2">
+              Top
+            </button>
+            <button class="list-option" type="button" data-index="3">
+              Upcoming
+            </button>
+          </div>
+          <div class="list-items">
+            <a href="#" class="list-item">
+              <img class="list-item-image" src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFuZGF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+              <div class="list-item-info">
+                <div class="title-wrapper section">
+                  <span class="title">Stray Panda</span>
+                </div>
+                <div class="tags section">
+                  <span class="tag">Adventure</span>
+                  <span class="dot">·</span>
+                  <span class="tag">Casual</span>
+                </div>
+                <div class="numbers section">
+                  <span class="price">$29.99</span>
+                  <span class="dot">·</span>
+                  <span class="rating">84%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://kit.fontawesome.com/944eb371a4.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
