@@ -57,16 +57,16 @@ h1, h2, h3, input, select, button, span, a, p {
   height: 0px;
   width: 0px;
 }
-
 #phone {
   background-color: rgb(var(--theme-background));
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
-  height: 851px;
-  width: 393px;  
+  height: 90%;
+  width: 90%;  
   margin: 100px auto;
   position: relative;
   overflow: hidden;
 }
+
 
 #main-wrapper {
   height: 100%;
