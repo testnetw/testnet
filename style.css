@@ -60,8 +60,8 @@ h1, h2, h3, input, select, button, span, a, p {
 #phone {
   background-color: rgb(var(--theme-background));
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
-  height: 90%;
-  width: 90%;  
+  height: 100%;
+  width: 100%;  
   margin: 100px auto;
   position: relative;
   overflow: hidden;
