@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
+<body onresize="sizechange()">
   <div id="main-wrapper" class="fancy-scrollbar">
     <div id="main">
       <div id="nav">
@@ -82,26 +82,97 @@
               Upcoming
             </button>
           </div>
-          <div class="list-items">
-            <a href="#" class="list-item">
-              <img class="list-item-image" src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFuZGF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
-              <div class="list-item-info">
-                <div class="title-wrapper section">
-                  <span class="title">Stray Panda</span>
+          <aside data-menu="close">
+        
+          </aside>
+          <nav class="main-nav">
+              <li class="menu" onclick="menu()"><svg width="25" height="25" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="1.5" x2="12" y2="1.5" stroke="#ff4e4e" stroke-width="3"/>
+                  <line y1="7.5" x2="20" y2="7.5" stroke="#ff4e4e" stroke-width="3"/>
+                  <line y1="13.5" x2="15" y2="13.5" stroke="#ff4e4e" stroke-width="3"/>
+                  </svg>            
+                  </li>
+              
+              
+          </nav>
+          
+              <div class="card-container">
+                  <div class="card">
+                      <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sneha-archanaskitchen.com/Classic_Mexican_Taco_Recipe_With_Refried_Beans__Fresh_Summer_Salad.jpg">
+                      <p>Mexican Taco</p>
+                  </div>
+                  <div class="card">
+                      <img src="https://content1.jdmagicbox.com/comp/indore/v4/0731px731.x731.110730145055.x5v4/catalogue/dominos-pizza-old-palasia-indore-pizza-outlets-19w3rcx-250.jpg">
+                      <p>Farmhouse Pizza</p>
+                  </div>
+                  <div class="card">
+                      <img src="https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg">
+                      <p>Chicken Burger</p>
+                  </div>
+                  <div class="card">
+                      <img src="https://www.kitchensanctuary.com/wp-content/uploads/2017/12/Crispy-Leftover-Turkey-Nachos-Recipe-square-FS-500x500.jpg">
+                      <p>Loaded Nachos</p>
+                  </div>
+                  <div class="card">
+                      <img src="https://st.depositphotos.com/1000504/4613/i/600/depositphotos_46133133-stock-photo-noodles-with-chicken-and-vegetables.jpg">
+                      <p>Hakka Noodles</p>
+                  </div>
+                  <div class="card">
+                      <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ndgo78rsoj4bybrk1q9g">
+                      <p>chinese momos</p>
+                  </div>
+              </div> <div class="card-container">
+                <div class="card">
+                    <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sneha-archanaskitchen.com/Classic_Mexican_Taco_Recipe_With_Refried_Beans__Fresh_Summer_Salad.jpg">
+                    <p>Mexican Taco</p>
                 </div>
-                <div class="tags section">
-                  <span class="tag">Adventure</span>
-                  <span class="dot">·</span>
-                  <span class="tag">Casual</span>
+                <div class="card">
+                    <img src="https://content1.jdmagicbox.com/comp/indore/v4/0731px731.x731.110730145055.x5v4/catalogue/dominos-pizza-old-palasia-indore-pizza-outlets-19w3rcx-250.jpg">
+                    <p>Farmhouse Pizza</p>
                 </div>
-                <div class="numbers section">
-                  <span class="price">$29.99</span>
-                  <span class="dot">·</span>
-                  <span class="rating">84%</span>
+                <div class="card">
+                    <img src="https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg">
+                    <p>Chicken Burger</p>
                 </div>
+                <div class="card">
+                    <img src="https://www.kitchensanctuary.com/wp-content/uploads/2017/12/Crispy-Leftover-Turkey-Nachos-Recipe-square-FS-500x500.jpg">
+                    <p>Loaded Nachos</p>
+                </div>
+                <div class="card">
+                    <img src="https://st.depositphotos.com/1000504/4613/i/600/depositphotos_46133133-stock-photo-noodles-with-chicken-and-vegetables.jpg">
+                    <p>Hakka Noodles</p>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ndgo78rsoj4bybrk1q9g">
+                    <p>chinese momos</p>
+                </div>
+            </div> <div class="card-container">
+              <div class="card">
+                  <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sneha-archanaskitchen.com/Classic_Mexican_Taco_Recipe_With_Refried_Beans__Fresh_Summer_Salad.jpg">
+                  <p>Mexican Taco</p>
               </div>
-            </a>
+              <div class="card">
+                  <img src="https://content1.jdmagicbox.com/comp/indore/v4/0731px731.x731.110730145055.x5v4/catalogue/dominos-pizza-old-palasia-indore-pizza-outlets-19w3rcx-250.jpg">
+                  <p>Farmhouse Pizza</p>
+              </div>
+              <div class="card">
+                  <img src="https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg">
+                  <p>Chicken Burger</p>
+              </div>
+              <div class="card">
+                  <img src="https://www.kitchensanctuary.com/wp-content/uploads/2017/12/Crispy-Leftover-Turkey-Nachos-Recipe-square-FS-500x500.jpg">
+                  <p>Loaded Nachos</p>
+              </div>
+              <div class="card">
+                  <img src="https://st.depositphotos.com/1000504/4613/i/600/depositphotos_46133133-stock-photo-noodles-with-chicken-and-vegetables.jpg">
+                  <p>Hakka Noodles</p>
+              </div>
+              <div class="card">
+                  <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ndgo78rsoj4bybrk1q9g">
+                  <p>chinese momos</p>
+              </div>
           </div>
+              </div>
         </div>
       </div>
     </div>
