@@ -1,14 +1,14 @@
 :root {
   --font-color: 200, 200, 200;
   --highlight-color: 3, 169, 244;
-  --body-color: 20, 30, 40;
+  --body-color: #f88f22;
   
   --theme-background: 38, 38, 38;
   --theme-primary: 185, 43, 39;
 }
 
 body {
-  background-color: rgb(var(--body-color));
+  background-color: #ffe3b3;
   margin: 0px;
 }
 
@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1, h2, h3, input, select, button, span, a, p {
-  color: rgb(var(--font-color));
+  color: #ffe3b3;
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -37,7 +37,7 @@ h1, h2, h3, input, select, button, span, a, p {
 }
 
 .highlight {
-  color: rgb(var(--highlight-color));
+  color: #ea6113;
 }
 
 .fancy-scrollbar::-webkit-scrollbar {
@@ -50,27 +50,26 @@ h1, h2, h3, input, select, button, span, a, p {
 }
 
 .fancy-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: #ea6113;
 }
 
 .no-scrollbar::-webkit-scrollbar {
   height: 0px;
   width: 0px;
 }
+
 #phone {
-  background-color: rgb(var(--theme-background));
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+  background-color: #ea6113;
+  box-shadow: #f88f22;
   height: 100%;
   width: 100%;  
   margin: 100px auto;
   position: relative;
   overflow: hidden;
 }
-
-
 #main-wrapper {
   height: 100%;
-  background-color: rgb(var(--theme-background));
+  background-color: #f88f22;
   overflow: auto;
 }
 
@@ -106,7 +105,7 @@ h1, h2, h3, input, select, button, span, a, p {
 }
 
 #top-wrapper > .nav-toggle {
-  width: 3rem;
+  width: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,12 +176,12 @@ h1, h2, h3, input, select, button, span, a, p {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  padding: 0.25rem;
+  padding: 0.55rem;
 }
 
 #nav-wrapper > .nav .nav-link {  
   height: 3rem;
-  width: 3rem;
+  width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
