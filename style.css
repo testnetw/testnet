@@ -10,7 +10,7 @@
 html,body {
   font-family: sans-serif;
   padding: 0 1em;
-  font-size: 19px;
+  font-size: 32px;
   background: #222;
   color: #aaa;
   text-align:center;
@@ -29,7 +29,7 @@ a:hover {
 }
 
 .italic { font-style: italic; }
-.small { font-size: 0.8em; }
+.small { font-size: 1em; }
 
 /** LIGHTBOX MARKUP **/
 
